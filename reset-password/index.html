@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<title>Set New Password – ClipLens AI</title>
+<meta name="description" content="Choose a new secure password for your ClipLens account.">
+<meta name="application-name" content="ClipLens AI">
+<meta name="theme-color" content="#e9ecfb">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://cliplensai.com/reset-password/">
+<link rel="icon" href="../icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/theme.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="../" aria-label="ClipLens AI home">
+      <span class="brand-mark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 22c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 2c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/></svg>
+      </span>
+      <span>ClipLens AI</span>
+    </a>
+  </div>
+</header>
+
+<main class="auth-page-container">
+  <div class="auth-card">
+    <div class="auth-header">
+      <h1 class="auth-title">Choose New Password</h1>
+      <p class="auth-subtitle">Please enter a new secure password for your account</p>
+    </div>
+
+    <!-- Alert Box -->
+    <div id="reset_alert" class="auth-alert" role="alert">
+      <span id="reset_alert_icon">⚠️</span>
+      <span id="reset_alert_text">Notice</span>
+    </div>
+
+    <form class="auth-form" id="reset_form" novalidate>
+      <div class="form-group">
+        <label for="new_password" class="form-label">New Password</label>
+        <div class="input-with-icon">
+          <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <input type="password" id="new_password" class="auth-input" placeholder="••••••••" required autocomplete="new-password">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="confirm_new_password" class="form-label">Confirm New Password</label>
+        <div class="input-with-icon">
+          <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <input type="password" id="confirm_new_password" class="auth-input" placeholder="••••••••" required autocomplete="new-password">
+        </div>
+      </div>
+
+      <button type="submit" class="auth-submit-btn" id="btn_submit_reset">
+        <span>Update Password</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+      </button>
+    </form>
+
+    <div class="auth-footer">
+      <a href="../login/" style="font-weight:700;color:var(--primary)">Return to Log In</a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>All Rights Reserved <span data-year>2026</span> © ClipLens AI</p>
+  </div>
+</footer>
+
+<script src="../js/site.js"></script>
+<script src="../js/supabase.js"></script>
+<script>
+(function() {
+  'use strict';
+  var form = document.getElementById('reset_form');
+  var newPwdInput = document.getElementById('new_password');
+  var confirmPwdInput = document.getElementById('confirm_new_password');
+  var submitBtn = document.getElementById('btn_submit_reset');
+  var alertBox = document.getElementById('reset_alert');
+  var alertText = document.getElementById('reset_alert_text');
+  var alertIcon = document.getElementById('reset_alert_icon');
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    hideAlert();
+
+    var pwd = newPwdInput.value;
+    var confirm = confirmPwdInput.value;
+
+    if (!pwd || pwd.length < 8) {
+      showAlert('Password must be at least 8 characters.', 'error');
+      return;
+    }
+
+    if (pwd !== confirm) {
+      showAlert('Passwords do not match.', 'error');
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span>Updating...</span>';
+
+    try {
+      await window.ClipLensAuth.updateUserPassword(pwd);
+      showAlert('Password updated successfully! Redirecting to login...', 'success');
+      setTimeout(function() {
+        window.location.href = '../login/?reset=success';
+      }, 1200);
+    } catch (err) {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = '<span>Update Password</span>';
+      showAlert(err.message || 'Failed to update password. Recovery link may have expired.', 'error');
+    }
+  });
+
+  function showAlert(msg, type) {
+    alertBox.className = 'auth-alert ' + type;
+    alertText.textContent = msg;
+    alertIcon.textContent = type === 'error' ? '❌' : '✓';
+  }
+
+  function hideAlert() {
+    alertBox.className = 'auth-alert';
+    alertBox.style.display = 'none';
+  }
+})();
+</script>
+</body>
+</html>

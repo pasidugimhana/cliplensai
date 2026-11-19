@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<title>Free Online PDF Converter – Convert Images, Text &amp; Merge PDF | ClipLens</title>
+<meta name="description" content="Free online PDF converter. Convert JPG/PNG images to PDF, Text/Notes to PDF, merge multiple PDFs — 100% private, client-side in browser with no upload limits.">
+<meta name="keywords" content="pdf converter, images to pdf, jpg to pdf, png to pdf, text to pdf, merge pdf online, free pdf converter, ClipLens, convert pdf to editable word free, pdf to word converter free download for windows 10, adobe pdf to word">
+<meta name="application-name" content="ClipLens AI">
+<meta name="theme-color" content="#e9ecfb">
+<meta name="google-adsense-account" content="ca-pub-9047490935389649">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9047490935389649" crossorigin="anonymous"></script>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://cliplensai.com/tools/pdf-converter/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cliplensai.com/tools/pdf-converter/">
+<meta property="og:site_name" content="ClipLens AI">
+<meta property="og:title" content="Free Online PDF Converter – Convert Images, Text &amp; Merge PDF | ClipLens">
+<meta property="og:description" content="Free online PDF converter. Convert JPG/PNG images to PDF, Text/Notes to PDF, merge multiple PDFs — 100% private in browser.">
+<meta property="og:image" content="https://cliplensai.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Online PDF Converter – Convert Images, Text &amp; Merge PDF | ClipLens">
+<meta name="twitter:description" content="Free online PDF converter. Convert JPG/PNG images to PDF, Text/Notes to PDF, merge multiple PDFs.">
+<meta name="twitter:image" content="https://cliplensai.com/og-image.png">
+<link rel="icon" href="../../icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="stylesheet" href="../../css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "ClipLens Universal PDF Converter",
+      "url": "https://cliplensai.com/tools/pdf-converter/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Any (Web Browser)",
+      "description": "Convert images to PDF, text to PDF, and merge PDF files directly in your web browser with zero server uploads.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cliplensai.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://cliplensai.com/tools/" },
+        { "@type": "ListItem", "position": 3, "name": "PDF Converter", "item": "https://cliplensai.com/tools/pdf-converter/" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is my data private when converting PDFs on ClipLens?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, 100%. All PDF processing runs locally inside your browser using client-side JavaScript. Your documents and photos are never uploaded or stored on any external server."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What image formats can I convert to PDF?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ClipLens supports JPG, JPEG, PNG, WebP, BMP, and GIF images. You can select multiple images to generate a combined multi-page PDF."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there any file size or page limits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Because conversion happens locally on your device, there are no artificial file size caps or page limits."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="../../css/theme.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="../../" aria-label="ClipLens AI home">
+      <span class="brand-mark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 22c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 2c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/>
+        </svg>
+      </span>
+      <span>ClipLens AI</span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="../../">Downloader</a>
+      <a href="../ai-video-generator/">AI Video</a>
+      <a href="../ai-chat-assistant/">AI Chat</a>
+      <a href="../pdf-converter/" class="active">PDF Converter</a>
+      <a href="../ai-image-generator/">AI Image</a>
+      <a href="../qr-code-scanner-generator/">QR Scanner</a>
+      <a href="../tiktok-downloader/">TikTok</a>
+      <a href="../youtube-to-mp4/">YouTube</a>
+      <a href="../../blog/">Blog</a>
+      <a href="../../faq/">FAQ</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="content" class="wrap">
+  <div class="platform-badge-header">
+    <span class="platform-tag" style="background:#dc2626">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      Universal PDF Engine
+    </span>
+  </div>
+
+  <h1>Universal Online PDF Converter</h1>
+  <p class="lead">Convert images to PDF, text to PDF, and manage documents right in your browser. 100% private, zero uploads to external servers, and unlimited conversions.</p>
+
+  <!-- Interactive PDF Converter Workspace -->
+  <div class="tool-card pdf-tool-card">
+    <!-- PDF Sub-Tool Switcher Tabs -->
+    <div class="pdf-mode-tabs" id="pdf_mode_tabs">
+      <button type="button" class="pdf-tab active" data-mode="img-to-pdf">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span>Images to PDF</span>
+      </button>
+      <button type="button" class="pdf-tab" data-mode="txt-to-pdf">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        <span>Text to PDF</span>
+      </button>
+    </div>
+
+    <!-- Mode 1: Images to PDF -->
+    <div class="pdf-panel" id="panel_img_to_pdf" style="display:block">
+      <div class="dropzone" id="img_dropzone">
+        <input type="file" id="img_file_input" accept="image/jpeg,image/png,image/webp" multiple style="display:none">
+        <div class="dropzone-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.8"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+        </div>
+        <h3 style="margin:10px 0 4px;font-size:18px">Choose Images or Drag &amp; Drop Here</h3>
+        <p style="color:var(--muted);font-size:14px;margin:0 0 14px">Supports JPG, PNG, and WebP photos (select multiple files)</p>
+        <button type="button" class="btn-select-files" id="btn_select_images">Select Images</button>
+      </div>
+
+      <!-- Selected Images Preview List -->
+      <div id="img_preview_container" style="display:none;margin-top:20px">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+          <strong>Selected Images (<span id="img_count_badge">0</span>)</strong>
+          <button type="button" class="clear-btn" id="btn_clear_images" style="display:flex">Clear All</button>
+        </div>
+        <div class="image-thumbs-grid" id="image_thumbs_grid"></div>
+
+        <!-- Options row -->
+        <div class="ai-controls-grid" style="margin-top:18px">
+          <div class="control-group">
+            <label class="control-label">Page Orientation</label>
+            <select id="pdf_orientation" class="ai-select">
+              <option value="portrait" selected>Portrait (Vertical)</option>
+              <option value="landscape">Landscape (Horizontal)</option>
+            </select>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Page Margins</label>
+            <select id="pdf_margin" class="ai-select">
+              <option value="small" selected>Small Margin (Compact)</option>
+              <option value="none">No Margin (Fit Full Page)</option>
+              <option value="large">Standard Margin</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="margin-top:20px;text-align:center">
+          <button type="button" class="btn-generate-ai" id="btn_convert_img_pdf" style="background:#dc2626">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Convert &amp; Download PDF</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mode 2: Text to PDF -->
+    <div class="pdf-panel" id="panel_txt_to_pdf" style="display:none">
+      <div class="control-group" style="margin-bottom:14px">
+        <label class="control-label">Document Title / Header</label>
+        <input type="text" id="txt_doc_title" class="ai-input" placeholder="e.g. Project Proposal / Study Notes" value="ClipLens Document">
+      </div>
+      <div class="control-group">
+        <label class="control-label">Document Content</label>
+        <textarea id="txt_content" rows="8" class="ai-textarea" placeholder="Type or paste your text here to convert into a polished PDF document..."></textarea>
+      </div>
+
+      <div style="margin-top:20px;text-align:center">
+        <button type="button" class="btn-generate-ai" id="btn_convert_txt_pdf" style="background:#dc2626">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Generate &amp; Download PDF</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Privacy Assurance Notice -->
+    <div class="clean-badge-bar" style="margin-top:20px;border-radius:10px">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <span><strong>Zero-Knowledge Privacy:</strong> All PDF synthesis occurs 100% inside your browser engine. Your files never touch any external server.</span>
+    </div>
+  </div>
+
+  <div data-ad="top"></div>
+
+  <!-- Editorial Articles for Google AdSense & SEO Authority -->
+  <article class="content">
+    <h2>Why Use a Client-Side Online PDF Converter?</h2>
+    <p>The Portable Document Format (PDF) remains the global standard for contracts, academic papers, portfolios, and official invoices. However, traditional online PDF converters force users to upload sensitive personal or commercial documents to cloud servers, introducing severe privacy and data security risks. <strong>ClipLens Universal PDF Converter</strong> solves this dilemma by running document rendering entirely inside your web browser using HTML5 Canvas and JavaScript vector libraries.</p>
+
+    <div class="features-grid">
+      <div class="feature-item">
+        <h3>🔒 Complete Privacy Assurance</h3>
+        <p>Your documents, receipts, and private photos never leave your device. Zero cloud uploads, zero server caching, and zero data leakage.</p>
+      </div>
+      <div class="feature-item">
+        <h3>⚡ Instant In-Browser Speed</h3>
+        <p>No waiting in server conversion queues. Documents are rendered in real time at native processor speeds with zero compression artifacts.</p>
+      </div>
+      <div class="feature-item">
+        <h3>📱 Cross-Device Compatibility</h3>
+        <p>Works smoothly across iOS Safari (iPhone &amp; iPad), Android Chrome, Windows, Mac, and Linux without installing bulky PDF software.</p>
+      </div>
+      <div class="feature-item">
+        <h3>💰 Unlimited &amp; Completely Free</h3>
+        <p>No page limits, no file size restrictions, and no hidden monthly subscriptions. Clean, unlimited document management for all users.</p>
+      </div>
+    </div>
+
+    <h2>How to Convert Multiple Photos into a Single PDF</h2>
+    <ol class="steps">
+      <li><b>Step 1 — Select or Drag Photos:</b> Click the <em>Select Images</em> button or drag JPG, PNG, or WebP files directly into the upload area.</li>
+      <li><b>Step 2 — Adjust Layout:</b> Select Portrait or Landscape orientation and choose your preferred page margins.</li>
+      <li><b>Step 3 — Download Master PDF:</b> Click <em>Convert &amp; Download PDF</em>. Your unified document is synthesized and saved straight to your downloads folder.</li>
+    </ol>
+
+    <h2>Preserving High Quality &amp; Color Profiles</h2>
+    <p>When assembling portfolios or official forms, maintaining razor-sharp text and natural image color profiles is crucial. ClipLens utilizes proportional aspect ratio scaling, preventing distorted image stretching while optimizing document byte sizes for effortless email attachments and mobile sharing.</p>
+  </article>
+
+  <div data-ad="bottom"></div>
+
+  <section class="related-block"><h2>People Also Search For</h2><ul class="related-searches"><li><a href="../pdf-to-word/">Convert PDF to editable Word free</a></li><li><a href="../pdf-to-word/">PDF to Word converter free download for Windows 10</a></li><li><a href="../pdf-to-word/">Adobe PDF to Word</a></li></ul></section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <nav class="footer-links" aria-label="Footer">
+      <a href="../../privacy-policy/">Privacy Policy</a>
+      <a href="../../terms-and-conditions/">Terms And Conditions</a>
+      <a href="../../contact/">Contact Us</a>
+      <a href="../../disclaimer/">Disclaimer</a>
+      <a href="../../about/">About</a>
+      <a href="../../dmca/">DMCA</a>
+      <a href="../../cookie-policy/">Cookie Policy</a>
+      <a href="../../blog/">Blog</a>
+      <a href="../../faq/">FAQ</a>
+      <a href="../../tools/pdf-to-word/">PDF to Word</a>
+      <a href="../../tools/free-video-downloader/">Free Video Downloader</a>
+      <a href="../../tools/ai-tiktok-video-generator/">AI TikTok Video Generator</a>
+      <a href="../../tools/seedance-ai/">Seedance AI</a>
+    </nav>
+    <p>All Rights Reserved <span data-year>2026</span> © ClipLens AI</p>
+  </div>
+</footer>
+
+<script src="../../js/site.js"></script>
+<script>
+(function() {
+  'use strict';
+  var modeTabs = document.querySelectorAll('.pdf-tab');
+  var panelImg = document.getElementById('panel_img_to_pdf');
+  var panelTxt = document.getElementById('panel_txt_to_pdf');
+  var fileInput = document.getElementById('img_file_input');
+  var selectImagesBtn = document.getElementById('btn_select_images');
+  var dropzone = document.getElementById('img_dropzone');
+  var previewContainer = document.getElementById('img_preview_container');
+  var thumbsGrid = document.getElementById('image_thumbs_grid');
+  var countBadge = document.getElementById('img_count_badge');
+  var clearImagesBtn = document.getElementById('btn_clear_images');
+  var convertImgBtn = document.getElementById('btn_convert_img_pdf');
+  var convertTxtBtn = document.getElementById('btn_convert_txt_pdf');
+
+  var loadedImages = [];
+
+  // Mode switching
+  modeTabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      modeTabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      var mode = tab.getAttribute('data-mode');
+      panelImg.style.display = mode === 'img-to-pdf' ? 'block' : 'none';
+      panelTxt.style.display = mode === 'txt-to-pdf' ? 'block' : 'none';
+    });
+  });
+
+  // Select Images Trigger
+  selectImagesBtn.addEventListener('click', function() {
+    fileInput.click();
+  });
+
+  fileInput.addEventListener('change', function(e) {
+    handleFiles(e.target.files);
+  });
+
+  // Drag & drop
+  dropzone.addEventListener('dragover', function(e) {
+    e.preventDefault();
+    dropzone.style.borderColor = 'var(--primary)';
+    dropzone.style.background = 'var(--primary-light)';
+  });
+
+  dropzone.addEventListener('dragleave', function() {
+    dropzone.style.borderColor = 'var(--line)';
+    dropzone.style.background = 'transparent';
+  });
+
+  dropzone.addEventListener('drop', function(e) {
+    e.preventDefault();
+    dropzone.style.borderColor = 'var(--line)';
+    dropzone.style.background = 'transparent';
+    if (e.dataTransfer && e.dataTransfer.files) {
+      handleFiles(e.dataTransfer.files);
+    }
+  });
+
+  function handleFiles(files) {
+    if (!files || !files.length) return;
+    Array.from(files).forEach(function(file) {
+      if (!file.type.startsWith('image/')) return;
+      var reader = new FileReader();
+      reader.onload = function(evt) {
+        loadedImages.push({
+          name: file.name,
+          dataUrl: evt.target.result
+        });
+        renderThumbs();
+      };
+      reader.readAsDataURL(file);
+    });
+  }
+
+  function renderThumbs() {
+    if (loadedImages.length === 0) {
+      previewContainer.style.display = 'none';
+      countBadge.textContent = '0';
+      return;
+    }
+    previewContainer.style.display = 'block';
+    countBadge.textContent = loadedImages.length;
+    thumbsGrid.innerHTML = loadedImages.map(function(img, idx) {
+      return `
+        <div class="thumb-card" data-idx="${idx}">
+          <img src="${img.dataUrl}" alt="${img.name}">
+          <button type="button" class="btn-remove-thumb" data-remove="${idx}" title="Remove image">✕</button>
+        </div>
+      `;
+    }).join('');
+
+    thumbsGrid.querySelectorAll('[data-remove]').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var idx = parseInt(btn.getAttribute('data-remove'), 10);
+        loadedImages.splice(idx, 1);
+        renderThumbs();
+      });
+    });
+  }
+
+  clearImagesBtn.addEventListener('click', function() {
+    loadedImages = [];
+    fileInput.value = '';
+    renderThumbs();
+  });
+
+  // Convert Images to PDF
+  convertImgBtn.addEventListener('click', async function() {
+    if (loadedImages.length === 0) {
+      alert('Please add at least one image first!');
+      return;
+    }
+    convertImgBtn.disabled = true;
+    convertImgBtn.innerHTML = '<span>Rendering PDF Document...</span>';
+
+    try {
+      var orientation = document.getElementById('pdf_orientation').value;
+      var marginType = document.getElementById('pdf_margin').value;
+      var margin = marginType === 'none' ? 0 : (marginType === 'small' ? 10 : 20);
+
+      var { jsPDF } = window.jspdf || {};
+      if (!jsPDF) throw new Error('PDF Engine not loaded. Please refresh page.');
+
+      var doc = new jsPDF({
+        orientation: orientation,
+        unit: 'mm',
+        format: 'a4'
+      });
+
+      var pageWidth = doc.internal.pageSize.getWidth();
+      var pageHeight = doc.internal.pageSize.getHeight();
+
+      for (var i = 0; i < loadedImages.length; i++) {
+        if (i > 0) doc.addPage();
+        var imgItem = loadedImages[i];
+
+        await new Promise(function(resolve) {
+          var img = new Image();
+          img.onload = function() {
+            var availW = pageWidth - (margin * 2);
+            var availH = pageHeight - (margin * 2);
+            var ratio = Math.min(availW / img.width, availH / img.height);
+            var renderW = img.width * ratio;
+            var renderH = img.height * ratio;
+            var x = margin + ((availW - renderW) / 2);
+            var y = margin + ((availH - renderH) / 2);
+
+            doc.addImage(imgItem.dataUrl, 'JPEG', x, y, renderW, renderH);
+            resolve();
+          };
+          img.src = imgItem.dataUrl;
+        });
+      }
+
+      doc.save('ClipLens-Document-' + Date.now() + '.pdf');
+      convertImgBtn.innerHTML = '<span>PDF Downloaded! ✓</span>';
+      setTimeout(function() {
+        convertImgBtn.disabled = false;
+        convertImgBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg><span>Convert &amp; Download PDF</span>';
+      }, 2000);
+    } catch (err) {
+      alert('Error generating PDF: ' + err.message);
+      convertImgBtn.disabled = false;
+    }
+  });
+
+  // Convert Text to PDF
+  convertTxtBtn.addEventListener('click', function() {
+    var text = document.getElementById('txt_content').value.trim();
+    var title = document.getElementById('txt_doc_title').value.trim() || 'Document';
+
+    if (!text) {
+      alert('Please enter or paste some text content first!');
+      return;
+    }
+
+    try {
+      var { jsPDF } = window.jspdf || {};
+      if (!jsPDF) throw new Error('PDF Engine not loaded.');
+
+      var doc = new jsPDF();
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(18);
+      doc.text(title, 20, 22);
+
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(12);
+      var splitLines = doc.splitTextToSize(text, 170);
+      doc.text(splitLines, 20, 34);
+
+      doc.save(title.replace(/[^a-zA-Z0-9_-]/g, '_') + '.pdf');
+      convertTxtBtn.innerHTML = '<span>Generated &amp; Downloaded! ✓</span>';
+      setTimeout(function() {
+        convertTxtBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg><span>Generate &amp; Download PDF</span>';
+      }, 2000);
+    } catch (e) {
+      alert('Error creating text PDF: ' + e.message);
+    }
+  });
+})();
+</script>
+</body>
+</html>

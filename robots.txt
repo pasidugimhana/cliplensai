@@ -1,0 +1,8 @@
+User-Agent: *
+Allow: /
+
+User-Agent: Mediapartners-Google
+Allow: /
+
+Host: https://cliplensai.com
+Sitemap: https://cliplensai.com/sitemap.xml

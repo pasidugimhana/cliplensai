@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<title>Free Online ZIP Extractor &amp; Archive Converter – Unpack &amp; Create ZIP | ClipLens</title>
+<meta name="description" content="Extract ZIP files online and inspect contents without software. Create and convert ZIP archives in your browser for free. 100% client-side privacy.">
+<meta name="keywords" content="zip extractor, unzip online, extract zip free, zip to rar, create zip online, archive converter, ClipLens">
+<meta name="application-name" content="ClipLens AI">
+<meta name="theme-color" content="#e9ecfb">
+<meta name="google-adsense-account" content="ca-pub-9047490935389649">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9047490935389649" crossorigin="anonymous"></script>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://cliplensai.com/tools/archive-tools/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cliplensai.com/tools/archive-tools/">
+<meta property="og:site_name" content="ClipLens AI">
+<meta property="og:title" content="Free Online ZIP Extractor &amp; Archive Converter | ClipLens">
+<meta property="og:description" content="Extract and create ZIP archives online for free without installing software.">
+<meta property="og:image" content="https://cliplensai.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Online ZIP Extractor &amp; Archive Converter | ClipLens">
+<meta name="twitter:description" content="Extract and create ZIP archives online for free without installing software.">
+<meta name="twitter:image" content="https://cliplensai.com/og-image.png">
+<link rel="icon" href="../../icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="stylesheet" href="../../css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "ClipLens Archive & ZIP Suite",
+      "url": "https://cliplensai.com/tools/archive-tools/",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any (Web Browser)",
+      "description": "Extract and inspect ZIP archive contents, unpack individual files, and create compressed ZIP archives online.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cliplensai.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://cliplensai.com/tools/" },
+        { "@type": "ListItem", "position": 3, "name": "ZIP & Archive Tools", "item": "https://cliplensai.com/tools/archive-tools/" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How does ClipLens extract ZIP archives safely?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Using JSZip directly in browser memory, ClipLens decodes compressed file tables without uploading your archives to external servers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I download individual files from a ZIP without extracting everything?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! The live file tree inspector lets you download only the specific documents, images, or code files you need."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="../../css/theme.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="../../" aria-label="ClipLens AI home">
+      <span class="brand-mark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 22c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 2c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/>
+        </svg>
+      </span>
+      <span>ClipLens AI</span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="../../">Downloader</a>
+      <a href="../archive-tools/" class="active">ZIP Tools</a>
+      <a href="../pdf-tools/">PDF Suite</a>
+      <a href="../document-converter/">Doc Converter</a>
+      <a href="../image-converter/">Image Converter</a>
+      <a href="../video-converter/">Video Converter</a>
+      <a href="../audio-converter/">Audio Converter</a>
+      <a href="../ai-video-generator/">AI Video</a>
+      <a href="../../blog/">Blog</a>
+      <a href="../../faq/">FAQ</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="content" class="wrap">
+  <div class="platform-badge-header">
+    <span class="platform-tag" style="background:linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%)">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+      Archive Management Studio
+    </span>
+  </div>
+
+  <h1>Free Online ZIP Extractor &amp; Archive Tools</h1>
+  <p class="lead">Unpack and inspect ZIP &amp; archive files directly in your browser without WinRAR or 7-Zip, or package multiple files into a compressed ZIP — 100% free and private.</p>
+
+  <!-- Interactive Archive Tool Card -->
+  <div class="tool-card">
+    <label class="control-label" style="margin-bottom:10px">Select Archive Utility:</label>
+    <div class="converter-modes-grid" id="zip_modes" style="grid-template-columns:repeat(auto-fit, minmax(180px, 1fr))">
+      <button type="button" class="mode-btn active" data-mode="extract">
+        <span class="mode-btn-icon">📦➡️📂</span>
+        <span>ZIP Extractor (Unpack)</span>
+      </button>
+      <button type="button" class="mode-btn" data-mode="create">
+        <span class="mode-btn-icon">📂➡️📦</span>
+        <span>ZIP Creator (Compress)</span>
+      </button>
+    </div>
+
+    <!-- Dropzone -->
+    <div class="dropzone" id="zip_dropzone">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" style="margin-bottom:10px"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+      <p style="font-size:16px;font-weight:700;margin:0 0 6px" id="zip_drop_title">Drag &amp; Drop your ZIP file here</p>
+      <p style="font-size:13px;color:var(--muted);margin:0 0 16px" id="zip_drop_sub">Select an archive to inspect and unpack</p>
+      <button type="button" class="btn-select-files" id="btn_browse_zip">Select Archive File</button>
+      <input type="file" id="zip_file_input" accept=".zip,.rar,.tar,.gz" style="display:none">
+    </div>
+
+    <!-- Extracted Contents Tree -->
+    <div id="zip_contents_wrap" style="display:none;margin-top:16px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <h4 style="margin:0;font-size:15px;color:#0f172a" id="archive_name_label">archive.zip (5 files)</h4>
+        <button type="button" class="file-item-remove" id="btn_reset_zip" style="font-size:13px;color:#ef4444;border:0;background:none;cursor:pointer">✕ Clear</button>
+      </div>
+
+      <ul class="zip-tree-list" id="zip_tree_list"></ul>
+
+      <div style="margin-top:16px;display:flex;justify-content:center;gap:12px">
+        <button type="button" class="btn-generate-ai" id="btn_download_all_zip" style="width:100%;max-width:320px;background:linear-gradient(135deg, #4f46e5, #7c3aed)">
+          <span>Download All Files</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div data-ad="top"></div>
+
+  <!-- Editorial Section -->
+  <article class="content">
+    <h2>Inspect and Extract Archives Safely Without Suspicious Software</h2>
+    <p>Downloading untrusted desktop archive tools or scam software just to open a simple <code>.zip</code> file is dangerous. <strong>ClipLens Archive Suite</strong> reads and decompresses archive headers directly inside your browser's sandboxed environment.</p>
+
+    <div class="features-grid">
+      <div class="feature-item">
+        <h3>🔍 File Tree Inspector</h3>
+        <p>Peek inside archives before extracting to inspect file names, directories, and uncompressed sizes safely.</p>
+      </div>
+      <div class="feature-item">
+        <h3>⚡ Selective Extraction</h3>
+        <p>Download only the specific image or PDF you need without filling up your hard drive with unnecessary files.</p>
+      </div>
+      <div class="feature-item">
+        <h3>📦 Instant In-Browser Compression</h3>
+        <p>Package multiple documents, images, and folders into a clean, shareable <code>.zip</code> archive in seconds.</p>
+      </div>
+    </div>
+  </article>
+
+  <div data-ad="bottom"></div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <nav class="footer-links" aria-label="Footer">
+      <a href="../../privacy-policy/">Privacy Policy</a>
+      <a href="../../terms-and-conditions/">Terms And Conditions</a>
+      <a href="../../contact/">Contact Us</a>
+      <a href="../../disclaimer/">Disclaimer</a>
+      <a href="../../about/">About</a>
+      <a href="../../dmca/">DMCA</a>
+      <a href="../../cookie-policy/">Cookie Policy</a>
+      <a href="../../blog/">Blog</a>
+      <a href="../../faq/">FAQ</a>
+      <a href="../../tools/pdf-to-word/">PDF to Word</a>
+      <a href="../../tools/free-video-downloader/">Free Video Downloader</a>
+      <a href="../../tools/ai-tiktok-video-generator/">AI TikTok Video Generator</a>
+      <a href="../../tools/seedance-ai/">Seedance AI</a>
+    </nav>
+    <p>All Rights Reserved <span data-year>2026</span> © ClipLens AI</p>
+  </div>
+</footer>
+
+<script src="../../js/site.js"></script>
+<script>
+(function() {
+  'use strict';
+  var modeBtns = document.querySelectorAll('#zip_modes .mode-btn');
+  var dropzone = document.getElementById('zip_dropzone');
+  var browseBtn = document.getElementById('btn_browse_zip');
+  var fileInput = document.getElementById('zip_file_input');
+  var dropTitle = document.getElementById('zip_drop_title');
+  var dropSub = document.getElementById('zip_drop_sub');
+  var contentsWrap = document.getElementById('zip_contents_wrap');
+  var archiveLabel = document.getElementById('archive_name_label');
+  var treeList = document.getElementById('zip_tree_list');
+  var downloadAllBtn = document.getElementById('btn_download_all_zip');
+  var resetBtn = document.getElementById('btn_reset_zip');
+
+  var currentMode = 'extract';
+  var currentZip = null;
+  var currentFile = null;
+
+  modeBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      modeBtns.forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      currentMode = btn.getAttribute('data-mode');
+      if (currentMode === 'extract') {
+        dropTitle.textContent = 'Drag & Drop your ZIP file here';
+        dropSub.textContent = 'Select an archive to inspect and unpack';
+        fileInput.removeAttribute('multiple');
+        fileInput.accept = '.zip,.rar,.tar,.gz';
+      } else {
+        dropTitle.textContent = 'Drag & Drop files to create a ZIP';
+        dropSub.textContent = 'Select multiple files to compress into a ZIP archive';
+        fileInput.setAttribute('multiple', 'true');
+        fileInput.removeAttribute('accept');
+      }
+      resetAll();
+    });
+  });
+
+  browseBtn.addEventListener('click', function() { fileInput.click(); });
+  dropzone.addEventListener('click', function(e) { if (e.target !== browseBtn) fileInput.click(); });
+
+  dropzone.addEventListener('dragover', function(e) { e.preventDefault(); dropzone.style.borderColor = '#4f46e5'; });
+  dropzone.addEventListener('dragleave', function() { dropzone.style.borderColor = ''; });
+  dropzone.addEventListener('drop', function(e) {
+    e.preventDefault();
+    dropzone.style.borderColor = '';
+    if (e.dataTransfer.files) handleFiles(e.dataTransfer.files);
+  });
+
+  fileInput.addEventListener('change', function() {
+    if (fileInput.files) handleFiles(fileInput.files);
+  });
+
+  function handleFiles(files) {
+    if (currentMode === 'extract') {
+      if (files[0]) readZipArchive(files[0]);
+    } else {
+      createZipArchive(files);
+    }
+  }
+
+  function readZipArchive(file) {
+    currentFile = file;
+    var JSZip = window.JSZip;
+    if (!JSZip) return;
+
+    JSZip.loadAsync(file).then(function(zip) {
+      currentZip = zip;
+      archiveLabel.textContent = file.name;
+      treeList.innerHTML = '';
+
+      var count = 0;
+      zip.forEach(function(relativePath, zipEntry) {
+        if (!zipEntry.dir) {
+          count++;
+          var li = document.createElement('li');
+          li.className = 'zip-tree-item';
+          li.innerHTML = `
+            <div style="display:flex;align-items:center;gap:8px;overflow:hidden">
+              <span>📄</span>
+              <span style="font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${escapeHtml(relativePath)}</span>
+            </div>
+            <button type="button" class="btn-copy" style="padding:3px 8px;font-size:11px" data-path="${escapeHtml(relativePath)}">Download</button>
+          `;
+          li.querySelector('button').addEventListener('click', function() {
+            var path = this.getAttribute('data-path');
+            zip.file(path).async('blob').then(function(blob) {
+              var a = document.createElement('a');
+              a.href = URL.createObjectURL(blob);
+              a.download = path.split('/').pop();
+              a.click();
+            });
+          });
+          treeList.appendChild(li);
+        }
+      });
+
+      archiveLabel.textContent = file.name + ' (' + count + ' files)';
+      dropzone.style.display = 'none';
+      contentsWrap.style.display = 'block';
+    }).catch(function(err) {
+      alert('Could not read ZIP archive. File may be corrupted or encrypted.');
+    });
+  }
+
+  function createZipArchive(files) {
+    var JSZip = window.JSZip;
+    if (!JSZip) return;
+
+    var zip = new JSZip();
+    for (var i = 0; i < files.length; i++) {
+      zip.file(files[i].name, files[i]);
+    }
+
+    zip.generateAsync({ type: 'blob' }).then(function(blob) {
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'cliplens-archive-' + Date.now() + '.zip';
+      a.click();
+      alert('ZIP archive created and downloaded successfully!');
+    });
+  }
+
+  downloadAllBtn.addEventListener('click', function() {
+    if (!currentZip) return;
+    currentZip.forEach(function(relativePath, zipEntry) {
+      if (!zipEntry.dir) {
+        zipEntry.async('blob').then(function(blob) {
+          var a = document.createElement('a');
+          a.href = URL.createObjectURL(blob);
+          a.download = relativePath.split('/').pop();
+          a.click();
+        });
+      }
+    });
+  });
+
+  function resetAll() {
+    currentZip = null;
+    currentFile = null;
+    fileInput.value = '';
+    treeList.innerHTML = '';
+    contentsWrap.style.display = 'none';
+    dropzone.style.display = 'block';
+  }
+
+  resetBtn.addEventListener('click', resetAll);
+
+  function escapeHtml(str) {
+    if (!str) return '';
+    return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+})();
+</script>
+</body>
+</html>

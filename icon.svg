@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#2a2b31"/>
+  <!-- YouTube play shape -->
+  <path d="M46 32c0 4.5-.4 8.5-1.2 10.5-.7 1.9-2.3 3.4-4.2 4.1C38.4 47.4 32 47.4 32 47.4s-6.4 0-8.6-.8c-1.9-.7-3.5-2.2-4.2-4.1C18.4 40.5 18 36.5 18 32s.4-8.5 1.2-10.5c.7-1.9 2.3-3.4 4.2-4.1C25.6 16.6 32 16.6 32 16.6s6.4 0 8.6.8c1.9.7 3.5 2.2 4.2 4.1.8 2 1.2 6 1.2 10.5z" fill="#ffffff" fill-opacity="0.18"/>
+  <!-- Play button & Download Arrow -->
+  <polygon points="27,24 41,32 27,40" fill="#ffffff"/>
+  <path d="M22 47h20" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+</svg>

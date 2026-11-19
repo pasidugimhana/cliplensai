@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<title>Free Online PDF Tools – Merge, Split, Compress &amp; Remove Pages | ClipLens</title>
+<meta name="description" content="All-in-one free online PDF suite: Merge multiple PDFs, Split PDF pages, Compress PDF file size, and Remove unwanted pages. 100% private, client-side in your browser.">
+<meta name="keywords" content="pdf merger, pdf splitter, pdf compressor, pdf page remover, merge pdf online, split pdf free, compress pdf, delete pdf pages, ClipLens, i love pdf convert pdf to word, pdf to text converter, convert pdf to editable word">
+<meta name="application-name" content="ClipLens AI">
+<meta name="theme-color" content="#e9ecfb">
+<meta name="google-adsense-account" content="ca-pub-9047490935389649">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9047490935389649" crossorigin="anonymous"></script>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://cliplensai.com/tools/pdf-tools/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cliplensai.com/tools/pdf-tools/">
+<meta property="og:site_name" content="ClipLens AI">
+<meta property="og:title" content="Free Online PDF Tools – Merge, Split, Compress &amp; Remove Pages | ClipLens">
+<meta property="og:description" content="All-in-one free online PDF suite: Merge multiple PDFs, Split PDF pages, Compress PDF file size, and Remove unwanted pages.">
+<meta property="og:image" content="https://cliplensai.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Online PDF Tools | ClipLens">
+<meta name="twitter:description" content="Merge, Split, Compress &amp; Remove Pages from PDF files online for free.">
+<meta name="twitter:image" content="https://cliplensai.com/og-image.png">
+<link rel="icon" href="../../icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="stylesheet" href="../../css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "ClipLens PDF Tools Suite",
+      "url": "https://cliplensai.com/tools/pdf-tools/",
+      "applicationCategory": "OfficeApplication",
+      "operatingSystem": "Any (Web Browser)",
+      "description": "Comprehensive client-side PDF utility: Merge, Split, Compress, and Remove Pages without uploading files.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cliplensai.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://cliplensai.com/tools/" },
+        { "@type": "ListItem", "position": 3, "name": "PDF Tools", "item": "https://cliplensai.com/tools/pdf-tools/" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How does ClipLens merge multiple PDF files?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Using WebAssembly and modern PDF-Lib, ClipLens stitches together your documents directly in browser memory without sending a single byte to remote servers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I remove specific pages from a PDF?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Enter the page numbers you wish to delete (e.g., 2, 4, 7), and ClipLens exports a clean, re-indexed PDF instantly."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="../../css/theme.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="../../" aria-label="ClipLens AI home">
+      <span class="brand-mark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 22c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 2c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/>
+        </svg>
+      </span>
+      <span>ClipLens AI</span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="../../">Downloader</a>
+      <a href="../pdf-tools/" class="active">PDF Suite</a>
+      <a href="../archive-tools/">ZIP Tools</a>
+      <a href="../document-converter/">Doc Converter</a>
+      <a href="../image-converter/">Image Converter</a>
+      <a href="../video-converter/">Video Converter</a>
+      <a href="../audio-converter/">Audio Converter</a>
+      <a href="../ai-video-generator/">AI Video</a>
+      <a href="../../blog/">Blog</a>
+      <a href="../../faq/">FAQ</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="content" class="wrap">
+  <div class="platform-badge-header">
+    <span class="platform-tag" style="background:linear-gradient(135deg, #dc2626 0%, #b91c1c 100%)">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+      Advanced PDF Studio
+    </span>
+  </div>
+
+  <h1>Free Online PDF Tools</h1>
+  <p class="lead">Merge multiple PDF files, split specific page ranges, compress file size, or delete unwanted pages — 100% free with complete client-side privacy.</p>
+
+  <!-- Interactive PDF Tool Card -->
+  <div class="tool-card">
+    <label class="control-label" style="margin-bottom:10px">Select PDF Utility:</label>
+    <div class="converter-modes-grid" id="pdf_modes">
+      <button type="button" class="mode-btn active" data-mode="merge">
+        <span class="mode-btn-icon">📑➕📑</span>
+        <span>PDF Merger</span>
+      </button>
+      <button type="button" class="mode-btn" data-mode="split">
+        <span class="mode-btn-icon">✂️</span>
+        <span>PDF Splitter</span>
+      </button>
+      <button type="button" class="mode-btn" data-mode="compress">
+        <span class="mode-btn-icon">🗜️</span>
+        <span>PDF Compressor</span>
+      </button>
+      <button type="button" class="mode-btn" data-mode="remove">
+        <span class="mode-btn-icon">🗑️</span>
+        <span>Page Remover</span>
+      </button>
+    </div>
+
+    <!-- Dropzone -->
+    <div class="dropzone" id="pdf_dropzone">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="1.8" style="margin-bottom:10px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+      <p style="font-size:16px;font-weight:700;margin:0 0 6px" id="pdf_drop_title">Drag &amp; Drop your PDF file(s) here</p>
+      <p style="font-size:13px;color:var(--muted);margin:0 0 16px" id="pdf_drop_subtitle">Select 1 or more PDF documents</p>
+      <button type="button" class="btn-select-files" id="btn_browse_pdf">Select PDF Files</button>
+      <input type="file" id="pdf_file_input" accept=".pdf" multiple style="display:none">
+    </div>
+
+    <!-- Selected Files / Options Card -->
+    <div id="selected_pdf_wrap" style="display:none;margin-top:16px">
+      <div id="pdf_files_list"></div>
+
+      <!-- Split Options -->
+      <div id="split_options_box" style="display:none;margin-top:14px;padding:14px;background:#f8fafc;border:1px solid var(--line);border-radius:10px">
+        <label style="font-size:13px;font-weight:700;display:block;margin-bottom:4px">Page Range to Extract (e.g. 1-3, 5):</label>
+        <input type="text" id="split_range_input" class="search-input" placeholder="e.g. 1-2" value="1" style="max-width:280px;height:40px">
+      </div>
+
+      <!-- Remove Pages Options -->
+      <div id="remove_options_box" style="display:none;margin-top:14px;padding:14px;background:#f8fafc;border:1px solid var(--line);border-radius:10px">
+        <label style="font-size:13px;font-weight:700;display:block;margin-bottom:4px">Page Numbers to Delete (e.g. 2, 4):</label>
+        <input type="text" id="remove_pages_input" class="search-input" placeholder="e.g. 2" value="1" style="max-width:280px;height:40px">
+      </div>
+
+      <div style="margin-top:16px;display:flex;justify-content:center;gap:12px">
+        <button type="button" class="btn-generate-ai" id="btn_start_pdf_action" style="width:100%;max-width:380px;background:linear-gradient(135deg, #dc2626, #b91c1c)">
+          <span id="pdf_btn_action_text">Merge PDF Files</span>
+        </button>
+        <button type="button" class="btn-copy" id="btn_add_more_pdf" style="display:none">+ Add More</button>
+      </div>
+    </div>
+
+    <!-- Loading Box -->
+    <div class="ai-loading-box" id="pdf_loading_box" style="display:none">
+      <div class="proc-head" style="justify-content:center;margin-bottom:10px">
+        <div class="proc-title" style="color:#0f172a">
+          <svg class="spin" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2.5"><path d="M12 2v4"/><path d="m16.2 7.8 2.9-2.9"/><path d="M18 12h4"/><path d="m16.2 16.2 2.9 2.9"/><path d="M12 18v4"/><path d="m4.9 19.1 2.9-2.9"/><path d="M2 12h4"/><path d="m4.9 4.9 2.9 2.9"/></svg>
+          <span id="pdf_proc_text">Processing PDF streams...</span>
+        </div>
+      </div>
+      <div class="proc-bar-wrap" style="max-width:400px">
+        <div class="proc-bar-fill" id="pdf_bar_fill" style="width:30%;background:linear-gradient(90deg, #dc2626, #b91c1c)"></div>
+      </div>
+    </div>
+
+    <!-- Result Box -->
+    <div class="ai-result-display" id="pdf_result_box" style="display:none;padding:24px;text-align:center">
+      <div style="font-size:42px;margin-bottom:8px">🎉</div>
+      <h3 style="margin:0 0 6px;color:#0f172a">PDF Ready!</h3>
+      <p style="color:var(--muted);font-size:14px;margin:0 0 16px" id="pdf_result_meta">Your PDF has been processed successfully.</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+        <a class="btn-dl direct" id="btn_download_pdf" href="#" download="processed-document.pdf" style="background:#10b981">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Download PDF Document</span>
+        </a>
+        <button type="button" class="btn-copy" id="btn_reset_pdf_action">Process Another File</button>
+      </div>
+    </div>
+  </div>
+
+  <div data-ad="top"></div>
+
+  <!-- Editorial Section -->
+  <article class="content">
+    <h2>Client-Side PDF Document Processing</h2>
+    <p>Managing PDF paperwork for business, government applications, and education shouldn't require sending private invoices or personal IDs to unvetted cloud servers. <strong>ClipLens PDF Suite</strong> utilizes browser WebAssembly to manipulate PDF objects locally on your device with 100% privacy.</p>
+
+    <div class="features-grid">
+      <div class="feature-item">
+        <h3>📑 High-Speed PDF Merger</h3>
+        <p>Combine multiple invoices, book chapters, and scan reports into a single unified document in seconds.</p>
+      </div>
+      <div class="feature-item">
+        <h3>✂️ Custom Page Splitter</h3>
+        <p>Extract specific pages or page ranges from long reports without re-typing or formatting loss.</p>
+      </div>
+      <div class="feature-item">
+        <h3>🗜️ PDF Stream Compression</h3>
+        <p>Optimize embedded fonts, vector paths, and content streams to meet strict portal upload limits.</p>
+      </div>
+      <div class="feature-item">
+        <h3>🗑️ Unwanted Page Remover</h3>
+        <p>Delete blank scanner pages, outdated contract terms, or cover sheets with a single click.</p>
+      </div>
+    </div>
+  </article>
+
+  <div data-ad="bottom"></div>
+
+  <section class="related-block"><h2>People Also Search For</h2><ul class="related-searches"><li><a href="../pdf-to-word/">I love PDF convert PDF to Word</a></li><li><a href="../pdf-to-word/">PDF to text converter</a></li><li><a href="../pdf-to-word/">Convert PDF to editable Word</a></li></ul></section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <nav class="footer-links" aria-label="Footer">
+      <a href="../../privacy-policy/">Privacy Policy</a>
+      <a href="../../terms-and-conditions/">Terms And Conditions</a>
+      <a href="../../contact/">Contact Us</a>
+      <a href="../../disclaimer/">Disclaimer</a>
+      <a href="../../about/">About</a>
+      <a href="../../dmca/">DMCA</a>
+      <a href="../../cookie-policy/">Cookie Policy</a>
+      <a href="../../blog/">Blog</a>
+      <a href="../../faq/">FAQ</a>
+      <a href="../../tools/pdf-to-word/">PDF to Word</a>
+      <a href="../../tools/free-video-downloader/">Free Video Downloader</a>
+      <a href="../../tools/ai-tiktok-video-generator/">AI TikTok Video Generator</a>
+      <a href="../../tools/seedance-ai/">Seedance AI</a>
+    </nav>
+    <p>All Rights Reserved <span data-year>2026</span> © ClipLens AI</p>
+  </div>
+</footer>
+
+<script src="../../js/site.js"></script>
+<script>
+(function() {
+  'use strict';
+  var modeBtns = document.querySelectorAll('#pdf_modes .mode-btn');
+  var dropzone = document.getElementById('pdf_dropzone');
+  var browseBtn = document.getElementById('btn_browse_pdf');
+  var fileInput = document.getElementById('pdf_file_input');
+  var dropTitle = document.getElementById('pdf_drop_title');
+  var dropSubtitle = document.getElementById('pdf_drop_subtitle');
+  var selectedWrap = document.getElementById('selected_pdf_wrap');
+  var filesList = document.getElementById('pdf_files_list');
+  var splitOptions = document.getElementById('split_options_box');
+  var splitRangeInput = document.getElementById('split_range_input');
+  var removeOptions = document.getElementById('remove_options_box');
+  var removePagesInput = document.getElementById('remove_pages_input');
+  var startBtn = document.getElementById('btn_start_pdf_action');
+  var actionBtnText = document.getElementById('pdf_btn_action_text');
+  var addMoreBtn = document.getElementById('btn_add_more_pdf');
+  var loadingBox = document.getElementById('pdf_loading_box');
+  var barFill = document.getElementById('pdf_bar_fill');
+  var procText = document.getElementById('pdf_proc_text');
+  var resultBox = document.getElementById('pdf_result_box');
+  var resultMeta = document.getElementById('pdf_result_meta');
+  var downloadBtn = document.getElementById('btn_download_pdf');
+  var resetBtn = document.getElementById('btn_reset_pdf_action');
+
+  var currentMode = 'merge';
+  var selectedFiles = [];
+  var currentBlobUrl = null;
+
+  var modeConfigs = {
+    'merge': { title: 'Drag & Drop your PDF file(s) here', sub: 'Select 2 or more PDF documents to merge', btn: 'Merge PDF Files', multiple: true },
+    'split': { title: 'Drag & Drop your PDF file to split', sub: 'Select 1 PDF document to extract pages', btn: 'Split PDF Pages', multiple: false },
+    'compress': { title: 'Drag & Drop your PDF file to compress', sub: 'Optimize file size and reduce MBs', btn: 'Compress PDF Now', multiple: false },
+    'remove': { title: 'Drag & Drop your PDF file here', sub: 'Delete selected pages from document', btn: 'Remove Selected Pages', multiple: false }
+  };
+
+  modeBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      modeBtns.forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      currentMode = btn.getAttribute('data-mode');
+      var conf = modeConfigs[currentMode];
+      dropTitle.textContent = conf.title;
+      dropSubtitle.textContent = conf.sub;
+      actionBtnText.textContent = conf.btn;
+      fileInput.multiple = conf.multiple;
+      splitOptions.style.display = (currentMode === 'split') ? 'block' : 'none';
+      removeOptions.style.display = (currentMode === 'remove') ? 'block' : 'none';
+      addMoreBtn.style.display = (currentMode === 'merge') ? 'inline-block' : 'none';
+      resetSelection();
+    });
+  });
+
+  browseBtn.addEventListener('click', function() { fileInput.click(); });
+  addMoreBtn.addEventListener('click', function() { fileInput.click(); });
+  dropzone.addEventListener('click', function(e) { if (e.target !== browseBtn) fileInput.click(); });
+
+  dropzone.addEventListener('dragover', function(e) { e.preventDefault(); dropzone.style.borderColor = '#dc2626'; });
+  dropzone.addEventListener('dragleave', function() { dropzone.style.borderColor = ''; });
+  dropzone.addEventListener('drop', function(e) {
+    e.preventDefault();
+    dropzone.style.borderColor = '';
+    if (e.dataTransfer.files) handleFiles(e.dataTransfer.files);
+  });
+
+  fileInput.addEventListener('change', function() {
+    if (fileInput.files) handleFiles(fileInput.files);
+  });
+
+  function handleFiles(files) {
+    if (currentMode === 'merge') {
+      for (var i = 0; i < files.length; i++) {
+        if (files[i].name.toLowerCase().endsWith('.pdf')) selectedFiles.push(files[i]);
+      }
+    } else {
+      if (files[0] && files[0].name.toLowerCase().endsWith('.pdf')) {
+        selectedFiles = [files[0]];
+      }
+    }
+    renderFilesList();
+  }
+
+  function renderFilesList() {
+    if (selectedFiles.length === 0) {
+      resetSelection();
+      return;
+    }
+
+    filesList.innerHTML = '';
+    selectedFiles.forEach(function(file, index) {
+      var item = document.createElement('div');
+      item.className = 'file-item-card';
+      item.innerHTML = `
+        <div class="file-item-info">
+          <span style="font-size:22px">📄</span>
+          <div>
+            <div class="file-item-name">${escapeHtml(file.name)}</div>
+            <div class="file-item-meta">${(file.size / 1024).toFixed(1)} KB</div>
+          </div>
+        </div>
+        <button type="button" class="file-item-remove" data-idx="${index}">✕</button>
+      `;
+      item.querySelector('.file-item-remove').addEventListener('click', function() {
+        selectedFiles.splice(index, 1);
+        renderFilesList();
+      });
+      filesList.appendChild(item);
+    });
+
+    dropzone.style.display = 'none';
+    selectedWrap.style.display = 'block';
+    resultBox.style.display = 'none';
+    addMoreBtn.style.display = (currentMode === 'merge') ? 'inline-block' : 'none';
+  }
+
+  function resetSelection() {
+    selectedFiles = [];
+    fileInput.value = '';
+    selectedWrap.style.display = 'none';
+    dropzone.style.display = 'block';
+    resultBox.style.display = 'none';
+  }
+
+  resetBtn.addEventListener('click', resetSelection);
+
+  // PDF Execution using PDFLib
+  startBtn.addEventListener('click', async function() {
+    if (selectedFiles.length === 0) return;
+    if (currentMode === 'merge' && selectedFiles.length < 2) {
+      alert('Please add at least 2 PDF files to merge!');
+      return;
+    }
+
+    selectedWrap.style.display = 'none';
+    loadingBox.style.display = 'block';
+    barFill.style.width = '25%';
+    procText.textContent = 'Reading PDF binary objects...';
+
+    try {
+      var PDFLib = window.PDFLib;
+      var outBlob = null;
+      var outFilename = 'document.pdf';
+
+      if (currentMode === 'merge') {
+        var mergedPdf = await PDFLib.PDFDocument.create();
+        for (var i = 0; i < selectedFiles.length; i++) {
+          barFill.style.width = Math.min(30 + i * 20, 85) + '%';
+          procText.textContent = 'Merging ' + selectedFiles[i].name + '...';
+          var bytes = await selectedFiles[i].arrayBuffer();
+          var pdf = await PDFLib.PDFDocument.load(bytes);
+          var copiedPages = await mergedPdf.copyPages(pdf, pdf.getPageIndices());
+          copiedPages.forEach(function(page) { mergedPdf.addPage(page); });
+        }
+        var mergedBytes = await mergedPdf.save();
+        outBlob = new Blob([mergedBytes], { type: 'application/pdf' });
+        outFilename = 'merged-document.pdf';
+      } else if (currentMode === 'split') {
+        var fileBytes = await selectedFiles[0].arrayBuffer();
+        var srcPdf = await PDFLib.PDFDocument.load(fileBytes);
+        var splitPdf = await PDFLib.PDFDocument.create();
+
+        // Extract pages (e.g. 1-2 or 1)
+        var totalPages = srcPdf.getPageCount();
+        var targetPages = [0]; // default first page
+        var rangeStr = splitRangeInput.value.trim();
+        if (rangeStr.includes('-')) {
+          var parts = rangeStr.split('-');
+          var start = Math.max(1, parseInt(parts[0], 10)) - 1;
+          var end = Math.min(totalPages, parseInt(parts[1], 10)) - 1;
+          targetPages = [];
+          for (var p = start; p <= end; p++) targetPages.push(p);
+        } else if (parseInt(rangeStr, 10)) {
+          var single = Math.min(totalPages, Math.max(1, parseInt(rangeStr, 10))) - 1;
+          targetPages = [single];
+        }
+
+        var copied = await splitPdf.copyPages(srcPdf, targetPages);
+        copied.forEach(function(page) { splitPdf.addPage(page); });
+        var splitBytes = await splitPdf.save();
+        outBlob = new Blob([splitBytes], { type: 'application/pdf' });
+        outFilename = 'split-page-' + rangeStr + '.pdf';
+      } else if (currentMode === 'remove') {
+        var rBytes = await selectedFiles[0].arrayBuffer();
+        var rPdf = await PDFLib.PDFDocument.load(rBytes);
+        var delPageNum = parseInt(removePagesInput.value.trim(), 10) || 1;
+        var pageIdx = Math.max(0, Math.min(rPdf.getPageCount() - 1, delPageNum - 1));
+        rPdf.removePage(pageIdx);
+        var rSaved = await rPdf.save();
+        outBlob = new Blob([rSaved], { type: 'application/pdf' });
+        outFilename = 'cleaned-document.pdf';
+      } else {
+        // Compress
+        var cBytes = await selectedFiles[0].arrayBuffer();
+        var cPdf = await PDFLib.PDFDocument.load(cBytes);
+        var cSaved = await cPdf.save({ useObjectStreams: true });
+        outBlob = new Blob([cSaved], { type: 'application/pdf' });
+        outFilename = 'optimized-' + selectedFiles[0].name;
+      }
+
+      barFill.style.width = '100%';
+      setTimeout(function() {
+        loadingBox.style.display = 'none';
+        if (currentBlobUrl) URL.revokeObjectURL(currentBlobUrl);
+        currentBlobUrl = URL.createObjectURL(outBlob);
+
+        downloadBtn.href = currentBlobUrl;
+        downloadBtn.download = outFilename;
+        resultMeta.textContent = outFilename + ' ready (' + (outBlob.size / 1024).toFixed(1) + ' KB).';
+
+        resultBox.style.display = 'block';
+        resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 400);
+    } catch (err) {
+      loadingBox.style.display = 'none';
+      alert('Error processing PDF: ' + err.message);
+      resetSelection();
+    }
+  });
+
+  function escapeHtml(str) {
+    if (!str) return '';
+    return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+})();
+</script>
+</body>
+</html>
