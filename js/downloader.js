@@ -1002,14 +1002,14 @@
           var blobUrl = URL.createObjectURL(blob);
           triggerDownloadLink(blobUrl, sanitizeFilename(opts.title) + '.' + opts.ext);
           btn.innerHTML = '<span>Downloaded! ✓</span>';
-          setTimeout(function () { btn.innerHTML = origHtml; btn.disabled = false; }, 3000);
+          setTimeout(function () { btn.innerHTML = origHtml; btn.disabled = true; }, 3000);
           return;
         }
       } catch (e) {
         // Fallback for CORS: Open direct stream with no-referrer
         triggerDownloadLink(opts.directUrl, sanitizeFilename(opts.title) + '.' + opts.ext);
         btn.innerHTML = '<span>Download Started! ✓</span>';
-        setTimeout(function () { btn.innerHTML = origHtml; btn.disabled = false; }, 3000);
+        setTimeout(function () { btn.innerHTML = origHtml; btn.disabled = true; }, 3000);
         return;
       }
     }
@@ -1019,7 +1019,7 @@
       var localDownloadUrl = `/api/download?url=${encodeURIComponent(opts.inputUrl)}&format=${encodeURIComponent(opts.fmt)}&title=${encodeURIComponent(opts.title)}&type=${opts.ext === 'mp3' ? 'audio' : 'video'}`;
       triggerDownloadLink(localDownloadUrl, sanitizeFilename(opts.title) + '.' + opts.ext);
       btn.innerHTML = '<span>Server Stream Ready! ✓</span>';
-      setTimeout(function () { btn.innerHTML = origHtml; btn.disabled = false; }, 3000);
+      setTimeout(function () { btn.innerHTML = origHtml; btn.disabled = true; }, 3000);
       return;
     }
 
@@ -1032,11 +1032,11 @@
       var loaderFmt = opts.fmt || (opts.ext === 'mp3' ? 'mp3' : '1080');
       var widgetUrl = `https://loader.to/api/button/?url=${encodeURIComponent(targetMediaUrl)}&f=${encodeURIComponent(loaderFmt)}&color=3f6df2`;
       embedIframe.src = widgetUrl;
-      embedBox.style.display = 'block';
-      embedBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      embedBox.style.display = 'true';
+      embedBox.scrollIntoView();
 
       btn.innerHTML = '<span>Ready Below! ⬇</span>';
-      setTimeout(function () { btn.innerHTML = origHtml; btn.disabled = false; }, 4000);
+      setTimeout(function () { btn.innerHTML = origHtml; btn.disabled = true; }, 4000);
       return;
     }
 
